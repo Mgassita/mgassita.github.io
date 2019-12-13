@@ -1,0 +1,250 @@
+#header {
+    background-color: #bbb;/* Grey background */
+    padding: 50px 10px;/* Some padding */
+    color: white;
+    text-align: center;/* Centered text */
+    font-size: 90px;/* Big font size */
+    font-weight: bold;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 100%;/* Full width */
+    transition: 0.5s;/* Add a transition effect (when scrolling - and font size is decreased) */
+    z-index: 1;
+}
+
+body {
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;/* height: 3000px; Used to enable scrolling; */
+    background: linear-gradient(55deg, #272727 0%, #2f2f30 51%, #414141 85%);
+}
+
+.text {
+    margin-top: 20px;/* padding:15px 15px 0px; */
+    font-size: 30px
+}
+
+.titre {
+    margin-top: 200px;
+    padding: 15px 15px 0px;
+    font-size: 30px;
+    text-shadow: -1px -1px rgb(255, 15, 15), 1px 1px #060, -3px 0 4px #000;
+    text-align: center;
+}
+
+#dots {
+    position: absolute;
+    left: 26vw;
+}
+
+.circle {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    background: #bbb;
+    color: black;
+    margin: 100px;
+}
+
+.circle_text {
+    display: block;
+    padding-top: 40px;
+}
+
+.element {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: #bbb;
+    margin: auto 300px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 80px;
+    position: relative;
+}
+
+.transition-width {
+    transition-property: width, background;
+    transition-duration: 2s;
+    -webkit-transition-property: width, background;
+    -webkit-transition-duration: 2s;
+}
+
+.transition-width:hover {
+    width: 100%;
+    background: darkred;
+}
+
+.transition-width p:hover {
+    visibility: visible;
+}
+
+#photoAndCircle {
+    vertical-align: center;
+    position: absolute;
+}
+
+#contener {
+    width: 100%;
+    height: 360px;
+}
+
+.element transition-width {
+    position: relative;
+    background: transparent;
+    top: 20px;
+}
+
+#ronds {
+    top: 20px;
+    position: absolute;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #bbb;
+    text-align: center;
+}
+
+#text-footer {
+    color: aqua;
+    margin: 0;
+}
+
+/* code pour les jauges */
+
+.tableau {
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: -40px;
+}
+
+.tableau h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.tableau h2 {
+    text-align: left;
+}
+
+.line {
+    height: 25px;
+    min-width: 800px;
+    margin: 0 auto 10 px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.line:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index: -2;
+    background: rgb(85, 85, 85);
+}
+
+.line:after {
+    content: '';
+    background: #333;
+    height: 25px;
+    transition: 0.8s;
+    display: block;
+    width: 100%;
+    animation: animate 1 4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.line1:after {
+    max-width: 60%;
+    background: green;
+}
+
+.line2:after {
+    max-width: 50%;
+    background: chocolate;
+}
+
+.line3:after {
+    max-width: 30%;
+    background: darkgoldenrod;
+}
+
+.line4:after {
+    max-width: 17%;
+    background: orange
+}
+
+.line5:after {
+    max-width: 15%;
+    background: rgb(15, 134, 15);
+}
+
+.line6:after {
+    max-width: 35%;
+    background: rgb(13, 179, 201);
+}
+
+.line7:after {
+    max-width: 10%;
+    background: rgb(255, 0, 191);
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+#titre2 {
+    top: 100px;
+    padding: 15px 15px 0px;
+    font-size: 30px;
+    text-shadow: -1px -1px rgb(255, 15, 15), 1px 1px #060, -3px 0 4px #000;
+    text-align: center;
+    margin-top: 390px;
+}
+
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* #customers tr:nth-child(even){background-color: #f2f2f2;} */
+  
+  #customers tr:hover {background-color: darkred;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkred;
+    color: white;
+  }
