@@ -1,0 +1,82 @@
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    background: #466368;
+    background: -webkit-linear-gradient(#648880, #293f50);
+    background:    -moz-linear-gradient(#648880, #293f50);
+    background:         linear-gradient(#648880, #293f50);
+    text-align: center;
+
+}
+
+nav li {
+    display: inline-block;
+    border-right: 1px solid #CCCCCC;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    padding: 12px;
+}
+nav li:hover {
+    background-color: darkorange;
+    transition: all ease 0.5s
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;  
+    color: #CCCCCC
+}
+
+body {
+    background-color: lightgray;
+    margin: 0px;
+    min-height: 100%; 
+    position: relative; 
+    padding-bottom: 0px; 
+    box-sizing: border-box;
+}
+
+#blockImage {
+    position:absolute;
+    left: 180px;
+    top: 34px;}
+     
+#Style5 {
+    position:absolute;
+    left: 18px;
+    top: 31px;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 70px;
+    color:#FFFFFF;
+}
+
+#Style6 {
+    position:absolute;
+    left: 18px;
+    top: 160px;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 30px;
+    color:#FFFFFF;
+}
+
+#Style7 {
+    position:absolute;
+    left: 18px;
+    top: 200px;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 30px;
+    color:#FFFFFF;
+}
+
+.Style1 {
+    position:absolute;
+    left: 800px;
+    top: 1050px;
+    font-family: Gabriola, "Gentium Basic", Georgia;
+    font-size: 90px;
+    color:dodgerblue;
+}
+
